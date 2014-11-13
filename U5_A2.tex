@@ -1,0 +1,43 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{CS 102 \LaTeX Übung}
+\author{Cyrill Chevalley}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Das ist der erste Abschnitt}
+Hier könnte auch anderer Text stehen.
+
+\section{Tabelle}
+Unsere wichtigsten Daten finden Sie in Tabelle 1.
+	\begin{table}[h]
+	\begin{centering}
+	\begin{tabular}{c|c|c|c}
+	&Punkte erhalten&Punkte möglich& \% \\
+	\hline
+	Aufgabe 1&2&4&0.5 \\
+	Aufgabe 2&3&3&1 \\
+	Aufgabe 3&3&3&1 \\
+	\end{tabular}
+	\caption{Diese Tabelle kann auch andere Werte beinhalten.}
+	\end{centering}
+	\end{table}
+	
+\section{Formeln}
+\subsection{Pythagoras}
+Der Satz des Pythagoras errechnet sich wie folgt: $a^{2} + b^2 = c^2$.
+Daraus können wir die Länge der Hypothenuse wie folgt berechnen: 
+$c = \sqrt{a^2 + b^2} $
+
+\subsection{Summen}	
+Wir können auch die Formel für die Summe angeben:
+\begin{equation}
+s=\sum \limits_{i=1}^{N} i = \frac{n \ast (n+1)}{2}
+\end{equation}
+
+\end{document}
